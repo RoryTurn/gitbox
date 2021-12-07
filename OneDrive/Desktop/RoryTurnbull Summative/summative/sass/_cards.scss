@@ -1,0 +1,183 @@
+
+/* 
+cards 
+*/
+
+.cardContent{
+    height: 70vh;
+    width: 100%; 
+    background-image: url("../img/night.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  .cardbox{ 
+    background: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+                      @media #{$mobile}{
+                        flex-direction: column;
+                      }
+  }
+   
+  .cardbox_left{
+        height: 100%;
+        width:50%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+                          @media #{$mobile}{
+                            height: 50%;
+                            width:100%;
+                          }
+    }
+    .cardbox_right{
+        height: 100%;
+        width:50%;
+        background: none;      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+                        @media #{$mobile}{
+                          height: 50%;
+                          width:100%;
+                        }
+        
+    }
+    .cardbody{
+      background: none;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+    }
+    .card_title{
+      margin-top:20px;
+      font-family: pakati;
+      font-size: 30px;
+                                @media #{$mobile}{
+                                  font-size: 17px;
+                                  letter-spacing: 0.5px;                                   
+                                  margin-top: 5px;
+                                  margin-left: 7vh;
+                                }
+    }
+    .card_text{
+      margin-top: 50px;
+      font-family: proxima;
+      font-size: 14px;
+      letter-spacing: 2px; 
+      height: 15px;
+      
+                              @media #{$mobile}{
+                                font-size: 11px;
+                                letter-spacing: 0.5px; 
+                                height: fit-content;
+                                margin-top: 5px;
+                                margin-left: 7vh;
+                                overflow-x: wrap;
+                              }
+  
+    }
+  .cardButtons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0vh;
+                              @media #{$mobile}{
+                                flex-direction: column;
+                                margin-top: 0.5vh;
+                              }
+
+  }
+  
+  /* 
+  card images
+  */
+  
+  .imgbox{
+    display: flex;
+    flex-direction:column;
+    background: none;
+    
+  }
+  
+  .imgbox2{
+    display: flex;
+    flex-direction: row;
+    background: none;
+
+                
+  
+  }
+  .img1{
+    width: 300px;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    border: none;
+    border: 4px solid white;
+    cursor: zoom-in;
+                      @media #{$mobile}{
+                        width: 280px;
+                        height: 160px;
+                      }
+  }
+  .img1:hover{
+    transform: scale(2.4);
+                      @media #{$mobile}{
+                        transform: none;
+                      }
+  }
+  .img2{
+    width: 150px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    border: none;
+    border: 4px solid white;
+    cursor: zoom-in;
+                      @media #{$mobile}{
+                        width: 140px;
+                        height: 75px;
+                      }
+  }
+  .img2:hover{
+    transform: scale(2.4);
+                      @media #{$mobile}{
+                        transform: none;
+                      }
+  }
+  .selectbutton{
+    background: black;
+    color: white;
+    margin-top: 0vh;
+    margin-left: 20vw;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: marker;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    border: 5px double $tekapoblue;
+    cursor: pointer;
+    
+    }
+    .selectbutton:hover{
+      background: white;
+      color: black;
+      border: 5px double $tekapoblue;
+    
+    }
+
+    #menuPick{
+      @media #{$mobile}{
+        display: none;
+      }
+    }
+

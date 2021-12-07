@@ -1,0 +1,335 @@
+
+/* 
+side bar div setup
+ */
+
+ .logodiv{
+    display: flex;
+    background-image: linear-gradient(to bottom, black, black,black, black, black, $tekapodark, $tekapoblue);
+    width: 100%;
+    height: 13%;
+    border: 4px double white;
+    border-radius: 0px 0px 0px 40px;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+                                                      @media #{$mobile}{
+                                                        height: 10vh;
+                                                        border-radius: 0px 0px 0px 20px;
+                                                        text-align: right;
+                                                    }
+  }
+  .logodiv_icon{
+    background: url("../img/asteroid.png");
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+                                                                @media #{$mobile}{
+                                                                  display: none;
+                                                              }
+  
+  }
+  .logodiv_text{
+  font-family: "pakati";
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 15px;
+                                                                        @media #{$mobile}{
+                                                                          font-size: 23px;
+                                                                          letter-spacing: 0.5px;
+                                                                          padding-right: 8px;
+                                                                      }
+  }
+  
+  .calenderdiv{
+    width: 100%;
+    height: 24%;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+                                                          @media #{$mobile}{
+                                                          flex-direction: column;
+                                                          height: 40vh;
+                                                            }
+  
+  }
+  .calenderdiv_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: end;
+  
+  }
+  .calenderdiv_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: end;
+  
+  }
+  .buttondiv{
+    width: 100%;
+    height: 31%;
+  
+    display: flex;
+    flex-direction: column;
+
+            &_top{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+            }
+            &_bottom{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            &_labels{
+                height: 100%;
+                width: 50%; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-evenly;
+                text-align: right;
+               
+              }
+            &_results{
+                margin-top: 65px;
+                height: 100%;
+                width: 50%; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-between;
+                text-align: right;
+                                                          @media #{$mobile}{
+                                                            text-align: left;
+                                                            margin-left: 10px;
+                                                            }
+              }
+            &_text{
+                color:white;
+                font-family: proxima;
+                font-size: 18px;
+                                                            @media #{$mobile}{
+                                                              font-size: 10px;
+                                                              }
+              
+              }
+            &_resulttext{
+                color: $tekapoalert;
+                font-family: proxima;
+                font-size: 18px;
+                margin-right: 22px;
+                                                                    @media #{$mobile}{
+                                                                      margin-top: -8px;
+                                                                      font-size: 10px;
+                                                                      }
+              
+              }
+            &_resultcost{
+                color:white;
+                font-family: pakati;
+                font-size: 30px;
+                margin-bottom: 35px;
+                margin-right: 22px;
+                                                                        @media #{$mobile}{
+                                                                          font-size: 18px;
+                                                                          margin-left: 50px;
+                                                                          }
+                
+              }
+            &_resultcost:hover{
+                color:$tekapoblue;
+              }
+
+  }
+
+
+  .iconholder2{
+  width: 50%;
+  height: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .mapdiv{
+    width: 100%;
+    height: 24%;  
+    display: block;
+  }
+  .footdiv{
+    width: 100%;
+    height: 9%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+                    &_logo{
+                        display: block;
+                        width: 200px;
+                        height: 60px;
+                        background-image: url('../img/logotop.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;  
+                        cursor: pointer;
+                        margin-left: 10px;
+                                      @media #{$mobile}{
+                                        display: none;
+                                      } 
+                        }
+
+                    &_logo:hover{
+                        border: 3px solid  $tekapoblue;
+                    }
+  }
+
+
+
+
+    .clearbutton{
+      background: $tekapoblue;
+      color: black;
+      width: 170px;
+      height: 50px;
+      text-align: center;
+      font-family: marker;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 20px;
+      border: 5px double white;
+      cursor: pointer;
+      margin-right: 10px;
+                              @media #{$mobile}{
+                                width: 100px;
+                                height: 30px;
+                                font-size: 10px;
+                                line-height: 10px;
+                              } 
+  
+    }
+    .clearbutton:hover{      
+      background: black;
+      color: $tekapoblue;
+      border: 5px double white;
+    }
+
+/* icons */
+  .icontelescope{
+    display: flex;
+    position: absolute;
+    bottom: 1vh;
+    left: 40vw;
+    height: 70px;
+    width: 70px;
+    background-image: url("../img/telescope.png");
+    transform: scaleX(-1);
+                            @media #{$mobile}{
+                              width: 40px;
+                              height: 40px;
+                              display: none;
+                          }
+  }
+  .icongalaxy{
+    display: block;
+    position: absolute;
+    top: 35.5vh;
+    left: 15vw;
+    height: 70px;
+    width: 70px;
+    background-image: url("../img/galaxy.png");
+    background-size: contain;
+                          @media #{$mobile}{
+                            width: 40px;
+                            height: 40px;
+                            display: none;
+                        }
+  }
+  
+  .iconplanet{
+    display: block;
+    position: absolute;
+    top: 3.5vh;
+    right: 18vw;
+    height: 70px;
+    width: 70px;
+    background-image: url("../img/planet.png");
+    background-size: contain;
+                          @media #{$mobile}{
+                            width: 40px;
+                            height: 40px;
+                            display: none;
+                        }
+  }
+
+  .iconcomet{
+    display: block;
+    position: absolute;
+    top: 3.5vh;
+    left: 51vw;
+    height: 70px;
+    width: 70px;
+    background-image: url("../img/sun.png");
+    background-size: contain;
+                          @media #{$mobile}{
+                            width: 40px;
+                            height: 40px;
+                            display: none;
+                        }
+  }
+
+// results button
+
+.linkclick4{
+  margin-left:50px;
+      background: black;
+      color: $tekapoblue;
+      border: 5px double white;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      font-family: marker;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 20px;     
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-right: 20px;
+                                                @media #{$mobile}{
+                                                  margin-top: 5px;
+                                                  width: 95px;
+                                                  height: 30px;
+                                                  font-size: 6px;
+                                                  line-height: 12px;
+                                                  margin-left: 5px;
+                                                  margin-right: none;
+                                                } 
+    
+    }
+  .linkclick4:hover{
+    background: rgb(153, 221, 225);
+    color: black;
+    border: 5px double white;   
+      
+    }

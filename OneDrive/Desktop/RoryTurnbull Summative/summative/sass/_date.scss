@@ -1,0 +1,50 @@
+.form-control{
+background: none;
+font-size: 60%;
+border: none;
+overflow-x: none;
+color: $tekapoblue;
+                                                                                        @media #{$mobile}{
+                                                                                            font-size: 30%;
+                                                                                            }
+
+}
+
+.form-control:hover{
+    transform: scale(2,2);
+    z-index: 1;
+}
+.calenderbox{
+    height: fit-content;
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+                                                                    @media #{$mobile}{
+                                                                        width: 100%;
+                                                                        }
+    &_text{
+        color:white;
+        font-family: proxima;
+        font-size: 13px;
+        margin-left: 5px;
+                                                        @media #{$mobile}{
+                                                            font-size: 10px;
+                                                            margin-left: -7.5px;
+                                                            }
+    }
+}
+.buttondatediv{
+    width:fit-content;
+    height: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+                                                    @media #{$mobile}{
+                                                        margin-left: -30px;
+                                                        }
+}
+

@@ -1,0 +1,208 @@
+/* 
+page div setup
+ */
+
+ .bodyGrid{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+                    @media #{$mobile}{
+                        width: 100vw;
+                        height: 100vh;
+
+
+
+                    }
+    }
+    
+    .sidebarContainer{
+        display: flex;
+        flex-direction:column;
+        width: 33%;
+        height: 100%;
+        
+        background-image: url("../img/sidebackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 5px double white;
+  
+    
+    }
+    /* 
+card screen div setup
+ */
+
+    .mainscreenContainer{
+        display: flex;
+        width: 67%;
+        height: 100%;
+        flex-direction: column;
+        background: black;
+    
+                                &_options{
+                                    display: block;
+                                    background-image: linear-gradient(to bottom, black, black,black, black, black, rgb(0, 56, 88),rgb(153, 221, 225));
+                                    width: 100%;
+                                    height: 20%;
+                                border-bottom: 5px double white;
+                                                    @media #{$mobile}{
+                                                        height: 10vh;
+                                                    }
+                                }
+
+                                &_content{
+                                    display: block;
+                                    background: url("../img/stars.jpeg");
+                                    width: 100%;
+                                    height: 85%;
+                                                    @media #{$mobile}{
+                                                        height: 120vh;
+                                                    }
+                                }
+                                &_logo{
+                                    display: flex;
+                                    background: linear-gradient(to top,black, black, black, black, $tekapodark, $tekapoblue);
+                                    width: 100%;
+                                    height: 15%;
+                                    border: 4px double white;
+                                    border-radius: 40px 0px 0px 0px;
+                                    border-right: none;
+                                    border-bottom: none;
+                                    text-align: center;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                                        @media #{$mobile}{
+                                                            margin-top: 10vh;
+                                                            border-radius: 20px 0px 0px 0px;
+                                                            height: 10vh;
+                                                        }
+                                    
+                                }
+                                &_text{
+    
+                                    font-family: marker;
+                                    font-size: 16px;
+                                                        @media #{$mobile}{
+                                                            font-size: 12px;
+                                                        }
+                                }
+                                &_shootingstar{
+                                    background: url("../img/shooting-star.png");
+                                    width: 50px;
+                                    height: 50px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    margin-bottom: 25px;
+                                                        @media #{$mobile}{
+                                                            width: 40px;
+                                                            height: 40px;
+                                                        }
+                                }
+                                &_smalllogo{
+                                    background: url("../img/logosmall.png");
+                                    width: 130px;
+                                    height: 60px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain; 
+                                    cursor: pointer;
+                                                    @media #{$mobile}{
+                                                        width: 100px;
+                                                        height: 40px;
+                                                    }
+                                }
+                                &_smalllogo:hover{
+                                    border: 3px solid  $tekapoblue;
+                                  }
+                              
+    }
+
+ 
+/* small cards */
+
+.smallcardcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &_box{
+        width: 30%;
+        height: 120px;
+        display: flex;
+      flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(to top, rgb(90, 127, 129),rgb(0, 56, 88),rgb(0, 22, 34), rgb(0, 12, 19), rgb(0, 22, 34), rgb(0, 56, 88),rgb(153, 221, 225));
+        overflow: none;
+        border: 4px double white;
+                                                @media #{$mobile}{
+                                                    padding-top: 5px;
+                                                    justify-content: space-around;
+                                                    width: 30%;
+                                                    height: 100px;
+                                                    border: 2px solid $tekapodark;
+                                                }  
+      }
+      &_title{  
+        color: $tekapoalert;
+        font-family: marker;
+        font-size: 19px;
+        -webkit-text-stroke: 1px black;
+                                                @media #{$mobile}{
+                                                    margin-top: 5px;
+                                                    font-family: proxima;
+                                                    font-size: 15px;
+                                                    color: $tekapoalert;
+                                                    -webkit-text-stroke: 0px black;
+                                                    text-overflow: none;
+                                                    
+                                                } 
+      }
+      &_img{
+        height: 70px;
+        width: 140px;
+        border: 3px double white;
+        background-repeat: no-repeat;
+        background-size:auto;
+        cursor: pointer;
+                                                @media #{$mobile}{
+                                                    display: none;
+                                                } 
+      }
+      &_type{
+        color: white;
+        font-family: proxima;
+        font-size: 12px;
+        text-transform: capitalize;
+      
+      }   
+  }
+#smallcardText{
+    margin-top: 10px;
+    margin-right: 30%;
+    width: 100px;
+                                                                @media #{$desktop}{
+                                                                    display: none;
+                                                                } 
+                                                                @media #{$mobile}{
+                                                                    display: block;
+                                                                    text-transform: capitalize;
+                                                                } 
+
+
+}
+
+
+.footerwords{
+display: flex;
+flex-direction: column;
+height: fit-content;
+@media #{$desktop}{
+   
+} 
+}

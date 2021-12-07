@@ -1,0 +1,118 @@
+/* number of people */
+
+
+.peopleselect_select{
+    background: $tekapoblue;
+    color: black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: marker;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    border: 5px double white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
+                    @media #{$mobile}{
+                      margin-top: 5px;
+                      width: 95px;
+                      height: 30px;
+                      font-size: 6px;
+                      line-height: 12px;
+                      margin-left:0px;
+                      
+                    }
+
+  }
+  .peopleselect_select2{
+    background: $tekapoblue;
+    color: black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: marker;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    border: 5px double white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
+                              @media #{$mobile}{
+                                width: 130px;
+                                height: 40px;
+                                font-size: 10px;
+                                line-height: 12px;
+                                margin-right: 100px;
+                                margin-top: 5px;
+                              }
+  }
+  .menu{
+    background: black;
+    color: white;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: marker;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    border: 5px double $tekapoblue;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 25%;
+                            @media #{$mobile}{
+                              width: 100px;
+                              height: 30px;
+                              font-size: 11px;
+                              line-height: 12px;
+                            }
+  }
+  .menu:hover{
+    background: $tekapoblue;
+    color: black;
+    border: 5px double white;
+  }
+  .menu_option{
+    font-family: proxima;
+    color: white;
+    border: 5px double white;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    background: black;
+    width: 200px; 
+  }
+  
+  .peopleselect_option{
+    font-family: proxima;
+    color: white;
+    border: 5px double white;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    background: black;
+    width: 200px; 
+  }
+  
+  .peopleselect_option2{
+    font-family: proxima;
+    color: white;
+    border: 5px double white;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    background: black;
+    width: 200px; 
+  }

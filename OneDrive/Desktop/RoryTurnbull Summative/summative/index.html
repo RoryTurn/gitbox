@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- START OF HTML PAGE -->
+<!-- all IMAGE references in refernce doccument. All ICONS from http://www.flaticon.com -->
+<html lang="en">
+<head>
+    <!-- HEAD SECTION START -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/jquery-ui.min.css" integrity="sha512-hGYkKzSMWaKWJ0MGIVy3h8Dk1VlEOQhR4NFB18jH3KCSzOhH5Zg6T54f526ne8eZVTlnFMcieY7Zlad9glJ9Mw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dark Skies Booking System</title>
+</head>
+<!-- HEAD SECTION END -->
+<!-- BODY SECTION START  -->
+<body>
+  <!-- page setup -->
+    <div class="bodyGrid">
+<!-- START OF SIDEBAR -->
+        <div class="sidebarContainer">
+          <!-- top logo setup -->
+            <div class="logodiv">
+              <div class="logodiv_icon"></div>
+              <h2 class="logodiv_text">Dark Skies Tekapo</h2>         
+            </div>
+        <!-- calender setup -->
+
+      <div class="calenderdiv">         
+          <div class="calenderdiv_left">
+            <div class="calenderbox" id="calenderLeft">
+                <label for="startDate" class="calenderbox_text">Enter your start date</label>              
+                <div type="date" id="startDate" class="form-control"></div>
+
+              </div>
+
+          </div>
+          <div class="calenderdiv_right">
+            <div class="calenderbox" id="calenderRight">
+              <label for="endDate" class="calenderbox_text">Enter your end date</label>              
+            <div type="date" id="endDate" class="form-control"></div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- buttons and results setup -->
+        <div class="buttondiv">
+          <!-- sidebar buttons -->
+            <div class="buttondiv_top">
+
+              <div class="iconholder2" id="peoplebuttonHolder">
+              </div>
+              <div class="iconholder3" id="resultSend">                
+              </div>
+              
+            </div>
+            <!-- results and result labels -->    
+          <div class="buttondiv_bottom">
+                <div class="buttondiv_labels">             
+                  <p class="buttondiv_text">Accommodation:</p>
+                  <p class="buttondiv_text">Number of Nights:</p>              
+                  <p class="buttondiv_text">Number of People:</p> 
+                </div> 
+                <div class="buttondiv_results" >
+                  <p id="houseDisplay" class="buttondiv_resulttext">Select Accomodation</p>              
+                  <p id="nightDisplay" class="buttondiv_resulttext">Select Dates</p>
+                  <p id="peopleDisplay" class="buttondiv_resulttext">Select Number of People</p>
+                  <h3 id="costDisplay" class="buttondiv_resultcost">$0.00</h3>
+                </div>  
+                <div class="buttondiv_results2" id="resultsAccommo"></div>
+          </div>
+          <!-- calculator function button -->
+                <div class="buttondatediv"> 
+                  <input id="calculateDays" type="button" value="Calculate Cost" class="linkclick2">
+                </div>          
+        </div>
+        <!-- map setup -->
+        <div class="mapdiv">
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+        </div>
+    <!-- sidebar footer setup -->
+    <div class="footdiv">
+                <a href="https://www.tourismnewzealand.com" target="blank">
+                <div class="footdiv_logo"></div></a>
+                <button class="clearbutton" type="submit" id="clearButton">Clear Fields</button>
+    </div>
+    <!-- hamburger links -->
+    <container class="mover" id="mover1">
+        <div class="linkbox" id="navid"> 
+                  <div id="myLinks">
+                    <button class="mylinks_linkbutton" type="submit" name="objectType" value="hostel" id="buttonlinkHostel">Hostel $30/Night</button>
+                    <button class="mylinks_linkbutton" type="submit" name="objectType" value="motel" id="buttonlinkMotel">Motel $90/Night</button>
+                    <button class="mylinks_linkbutton" type="submit" name="objectType" value="hotel" id="buttonlinkHotel">Hotel $157/Night</button>
+                    <button class="mylinks_linkbutton" type="submit" name="objectType" value="house" id="buttonlinkHouse">House $240/Night</button>
+                    
+                  </div>
+          </div> 
+    </container>
+        </div>   
+<!-- END OF SIDEBAR   -->
+<!-- MAIN/CARD SCREEN START -->
+        
+  <div class="mainscreenContainer">
+    <!-- mainscreen options/top section -->
+      <div class="mainscreenContainer_options">
+              <div class="movercontainer" type="button" id="goButton">
+                <container class="mover3" id="buttonselectID">
+                </container>
+      </div>
+              <div class="mainscreenContainer_optcontainer" id="optContainer">
+              </div>
+      </div>
+      <!-- mainscreen card/content section -->
+            <div class="mainscreenContaier_content"> 
+              <!-- large cards contaner to append to -->
+                <div id="cardContent" class="cardContent">
+                          <!-- small cards container ot append to -->
+                          <div class="smallcardcontainer" id="smallCard">
+                          </div>
+                </div>
+                <!-- modal/food menu section to append to -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <div class="modal-title" id="exampleModalLongTitle"></div>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body" id="objectArrayModalInfo">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                
+                <!-- mainscreen logo/bottom section -->
+                <div class="mainscreenContainer_logo">
+                      <div class="mainscreenContainer_shootingstar"></div>
+                      <div class="footerwords">
+                              <h1 class="mainscreenContainer_text">Brought to you by Tourism NZ and Dark Skies Tekapo  </h1>
+                              
+                              <p class="mainscreenContainer_text">All Icons from www.flaticon.com </p>
+                       </div>
+                      <a href="https://www.tourismnewzealand.com" target="blank">
+                      <div class="mainscreenContainer_smalllogo"></div></a>
+                </div> 
+  </div>
+<!-- END OF MAIN/CARD SCREEN -->
+<!--START OF POSITION ABOSLUTE ITEMS -->
+<img class="icontelescope" src="img/telescope.png" >
+<div id="imgOne">
+              <img class="iconplanet" src="img/planet.png" >
+              <img class="iconcomet" src="img/sun.png">
+</div>
+<div id="galaxy">
+<img class="icongalaxy" src="img/galaxy.png">
+</div>
+
+<!-- input checks for mainscreen small cards -->
+<div id="moverClear">
+          <container class="moverCheck_1">
+            <form class="moverCheck_form" action="">      
+              <input type="radio" name="objectType" value="hostel1" class="mycheck">
+              <input type="radio" name="objectType" value="motel2" class="mycheck">
+              <input type="radio" name="objectType" value="hotel3" class="mycheck">
+            </form>
+          </container>
+          <container class="moverCheck_2">
+            <form class="moverCheck_form" action="">      
+              <input type="radio" name="objectType" value="hostel2" class="mycheck">
+              <input type="radio" name="objectType" value="motel3" class="mycheck">
+              <input type="radio" name="objectType" value="house1" class="mycheck">
+            </form>
+          </container>
+            <container class="moverCheck_3">
+              <form class="moverCheck_form" action="">      
+                <input type="radio" name="objectType" value="hostel3" class="mycheck">
+                <input type="radio" name="objectType" value="hotel1" class="mycheck">
+                <input type="radio" name="objectType" value="house2" class="mycheck">
+              </form>
+            </container>
+          <container class="moverCheck_4">
+            <form class="moverCheck_form" action="">      
+              <input type="radio" name="objectType" value="motel1" class="mycheck">
+              <input type="radio" name="objectType" value="hotel2" class="mycheck">
+              <input type="radio" name="objectType" value="house3" class="mycheck">
+            </form>
+          </container>
+</div>
+<container class="mover4">
+  <p class="minmaxtext" id="minMax1"></p>
+  <p class="minmaxtext" id="minMax2"></p>
+</container>
+<!-- END OF POSITION ABSOLUTE ITEMS -->
+<!-- END OF BODY SECTION -->
+<!-- START OF SCRIPT SECTION -->
+    <!-- js Scripts -->
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- my scripts -->
+    <script src="./script/key.js"></script>       
+    <script src="./script/script.js"></script> 
+</body>
+</html>
+<!-- END OF HTML PAGE -->
